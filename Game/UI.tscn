@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI.gd" type="Script" id=1]
+[ext_resource path="res://GodotFPS-Assets/Font/font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://GodotFPS-Assets/UI/UI_Square.png" type="Texture" id=3]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.16638
+margin_right = 1.16638
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+anchor_left = 0.003
+anchor_top = 1.0
+anchor_right = 0.003
+anchor_bottom = 1.0
+margin_left = -0.0701079
+margin_top = -21.3535
+margin_right = 73.9299
+margin_bottom = -1.35352
+value = 50.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 3 )
+tint_progress = Color( 1, 0, 0, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -1.52588e-05
+margin_top = 540.021
+margin_right = 104.0
+margin_bottom = 574.021
+custom_fonts/font = ExtResource( 2 )
+text = "Ammo: "
+
+[node name="Label2" type="Label" parent="."]
+margin_left = -1.16637
+margin_top = 500.365
+margin_right = 102.834
+margin_bottom = 534.365
+custom_fonts/font = ExtResource( 2 )
+text = "Score: "
