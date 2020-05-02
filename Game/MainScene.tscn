@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://GodotFPS-Assets/Models/Environment/Ground.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://GodotFPS-Assets/Models/Environment/Tree_1.obj" type="ArrayMesh" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Pickup_Ammo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Pickup_Health.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://OriginalMesh.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( 0, 0, 0, 3, 0.3, 0, 3, 0, 0, 3, 0.3, 0, 0, 0, 0, 0, 0.3, 0, 0, 0.3, -3, 3, 0.3, 0, 0, 0.3, 0, 3, 0.3, 0, 0, 0.3, -3, 3, 0.3, -3, 3, 0, -3, 3, 0.3, 0, 3, 0.3, -3, 3, 0.3, 0, 3, 0, -3, 3, 0, 0, 3, 0, -3, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, -3, 0, 0.3, -3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0.3, -3, 0, 0.3, 0, 3, 0, -3, 0, 0.3, -3, 0, 0, -3, 0, 0.3, -3, 3, 0, -3, 3, 0.3, -3 )
@@ -186,3 +187,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 2, -2 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -20 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="untitled" parent="MeshInstance" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 23, 17 )
